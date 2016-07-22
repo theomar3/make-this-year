@@ -54,9 +54,11 @@ table {
 /*=====================*/
 /*page layout stuff*/
 /*=====================*/
-body{
+body {
   font-family: sans-serif;
 }
+
+
 
 
 
@@ -65,20 +67,22 @@ body{
 /*black background section*/
 /*============================*/
 
+
+
 .make-this-year {
   background-color: black;
-  padding: 25px;
+  padding: 2%;
 }
 
-.center-box{
-  width: 45%;
+.center-box {
+  max-width: 620px;
   margin: 0 auto;
   padding-bottom: 40px;
-	outline: solid 1px red;
 }
 
 .make-this-year img {
   margin-bottom: 70px;
+	max-width: 100%;
 }
 
 .make-this-year-paragraph-one {
@@ -91,9 +95,9 @@ body{
 }
 
 .dots {
-	width: 500px;
+	width: 70%;
 	background: url("http://makethisyear.com/images/dot.png") repeat-x bottom left;
-	padding: 4px;
+	padding: 1%;
 }
 
 .js-stuff {
@@ -110,29 +114,28 @@ body{
 
 }
 
-.email {
-  width: 57%;
-  padding: 19px 20px;
-  margin-right: 16px;
-  background: #E6E6E6;
-  color: #A7A7A7;
-  border: solid 2px transparent;
-	border-radius: 4%;
-	font-size: 1.3em;
+.email, .invite-button {
+  border: none;
+  border-radius: 3px;
+  font-size: 1.1em;
+  padding: 20px 5%;
+}
 
+.email {
+  margin-right: 2%;
+  width: 54%;
+	background: #E6E6E6;
+  color: #A7A7A7;
 }
 
 .invite-button {
-  width: 190px;
-  padding: 20px 20px;
-  background-color: #ae5cc8;
-  color: #FFFFFF;
-  cursor: pointer;
-  margin-top: 30px;
-	margin-left: 2%;
-	font-size: 1.3em;
-	border: none;
+  width: 33%;
+	background-color: #ae5cc8;
+	cursor: pointer;
+	color: #FFFFFF;
 }
+
+
 
 .invite-button:hover {
   background-color: #8a2be2;
@@ -144,9 +147,8 @@ body{
 /*===============================*/
 
 .company-description {
-  width: 650px;
+  max-width: 620px;
   margin: 0 auto;
-	outline: solid 1px red;
 }
 
 .company-description h3 {
@@ -157,26 +159,33 @@ body{
 
 
 
-.instructors ul li {
-  float: left;
-  width: 193px;
-  margin-right: 20px;
+.instructors  li {
+	float: left;
+  width: 30%;
+  margin-right: 3%;
   color: #9c9c9c;
   font-size: .95em;
+
 }
+
+
 
 .instructor-pic {
   margin-top: 30px;
-  margin-bottom: 13px;
+	margin-bottom: -70px;
+	max-width: 100%;
 }
 
-.instructor-name {
+.instructor-name, .instructors h3 {
   color: black;
   font-size: 1.1em;
-  margin-bottom: 8px;
+	font-family: Arial;
+	margin-bottom: 5px;
+
 }
 
-.instructors ul li p{
+.instructors p{
+	margin-bottom: 8px;
   line-height: 1.5em;
 }
 
@@ -214,24 +223,27 @@ footer {
 /*=========================*/
 
 .company-logos ul li {
+	outline: solid 1px orange;
   float: left;
-  width: 180px;
+  width: 27%;
 }
 
 #fastcompany {
-
+	max-width: 100%;
   padding-top: 18px;
 }
 
 #tnw {
-  margin-left: 30px;
+  margin-left: 4%;
   text-align: right;
+	max-width: 100%;
 }
 
 #quartz {
   text-align: right;
-  margin-left: 80px;
+  margin-left: 14%;
   padding-top: 15px;
+	max-width: 100%;
 }
 
 .repeat-email {
@@ -253,4 +265,99 @@ footer a {
 
 footer a:hover {
   color: black;
+}
+
+@media only screen and  (max-width: 619px) {
+
+	.make-this-year {
+	  background-color: black;
+	  padding-bottom: 5%;
+	}
+
+	.center-box {
+		width: 88%;
+		padding: 2%;
+		overflow: auto;
+	}
+
+	.make-this-year img {
+		margin-top: 10px;
+		margin-bottom: 30px;
+		max-width: 200px;
+	}
+
+	.make-this-year-paragraph-one {
+	  color:white;
+	  font-size:1.9em;
+	  font-weight: bold;
+	  line-height: 1.3em;
+	  display: inline-block;
+	  width: 100%;
+	}
+
+	.make-this-year-paragraph-two {
+	  color:white;
+	  font-size:1.2em;
+	  line-height: 1.5em;
+	  margin-top: 30px;
+		margin-bottom: 15px;
+	  width: 100%;
+
+	}
+
+	.email {
+		width: 90%;
+	}
+
+	.invite-button {
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.company-description {
+	  width: 88%;
+		margin-top: -30px;
+		padding: 2%;
+	}
+
+	.instructors {
+		overflow: auto;
+	}
+
+
+
+	.instructor-pic {
+		float: left;
+		width: 110px;
+		height: 110px;
+	}
+
+	.instructors li  {
+		width: 100%;
+		float: right;
+	}
+
+	.instructors li h3, .bio {
+		margin-left: 26%;
+
+	}
+
+	.marketing h3 {
+		padding: 0;
+		line-height: 1.5em;
+		font-size: 1.2em;
+	}
+
+	
+
+
+
+
+
+
+
+
+
+
+
 }
